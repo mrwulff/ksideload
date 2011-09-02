@@ -85,14 +85,14 @@ def parsebing(b,bname):
     
 
 def finddir():
-    format()
+    
     try:
         os.chdir('ready')
     except:
         print '********************ERROR****************************'
         print "you need to have your books in a folder called 'ready'"
         print '********************ERROR****************************'
-
+    format()
     a= os.getcwd()
     
     for files in os.walk(a):
