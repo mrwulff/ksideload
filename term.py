@@ -1,3 +1,6 @@
+####this uses the touchpad and this tut http://thp.io/2011/webos/
+
+
 from urllib import *
 from string import *
 from shutil import *
