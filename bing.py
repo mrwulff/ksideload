@@ -85,14 +85,14 @@ def parsebing(b,bname):
     
 
 def finddir():
-    format()
+    
     try:
         os.chdir('ready')
     except:
         print '********************ERROR****************************'
         print "you need to have your books in a folder called 'ready'"
         print '********************ERROR****************************'
-
+    format()
     a= os.getcwd()
     
     for files in os.walk(a):
@@ -102,12 +102,13 @@ def finddir():
         if '.mobi' in bname:
             #print bname
             #print type(bname)
-            #findbname(bname)
+            findbname(bname)
             'l'
     print "now open your ready/readinglist.html and click on each o those links and download the sample"
     print "after your kindle updated, copy your 'copytokindle' directory to the /.palmkindle on your touchpad"
     print "thanks to DCPeterson2000 on precentral.net and joesacher.com"
     os.system('open readinglist.html')
+    os.system('readinglist.html')
     
 
 
